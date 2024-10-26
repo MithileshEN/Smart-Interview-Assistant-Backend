@@ -1,3 +1,4 @@
+pip>=23.0
 Flask==2.3.3
 google-generativeai==0.1.0
 moviepy==1.0.3
