@@ -8,9 +8,3 @@ SpeechRecognition==3.10.0
 torch
 torchvision
 torchaudio
-
-# Note: ffmpeg is required for moviepy and pydub.
-# Install ffmpeg via package manager:
-# For Ubuntu: sudo apt-get install ffmpeg
-# For macOS (with Homebrew): brew install ffmpeg
-# For Windows: Download from https://ffmpeg.org/download.html and add to PATH
