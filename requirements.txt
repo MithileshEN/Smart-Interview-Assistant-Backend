@@ -4,6 +4,7 @@ moviepy==1.0.3
 transformers==4.33.2
 pydub==0.25.1
 PyPDF2==3.0.1
+tokenizers==0.13.3
 SpeechRecognition==3.10.0
 torch
 torchvision
