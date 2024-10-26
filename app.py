@@ -16,6 +16,20 @@ app = Flask(__name__)
 genai.configure(api_key="AIzaSyDQYotglq1ftvrrTsZHZ1ms9WC363nesS0")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
+
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({
+        "message": "Welcome to the AI-Powered API!",
+        "endpoints": {
+            "/evaluate_answer": "Evaluate a provided answer for its technical correctness.",
+            "/evaluate_text_quality": "Evaluate text quality based on grammar, vocabulary sophistication, and content richness.",
+            "/generate_interview_questions": "Generate interview questions based on the provided PDF resume.",
+            "/analyze_emotion": "Analyze emotions from a video file by extracting audio.",
+            "/transcribe_audio": "Transcribe audio from an audio file."
+        }
+    })
+
 @app.route('/evaluate_answer', methods=['POST'])
 def evaluate_answer():
     # Get the question and answer from the request body
