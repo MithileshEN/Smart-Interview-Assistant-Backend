@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "app.py": {
-      "runtime": "python3.8"
-    }
-  },
   "builds": [
     {
       "src": "app.py",
